@@ -1,4 +1,4 @@
-# snippetclient1
+# snippetclient
 
 ## Build Setup
 

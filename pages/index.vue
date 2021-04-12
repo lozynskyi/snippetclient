@@ -3,7 +3,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        snippetclient1
+        snippetclient
       </h1>
       <div class="links">
         <a
