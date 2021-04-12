@@ -7,9 +7,18 @@ module.exports = {
         header: ['Rubik', 'sans-serif']
       }
     },
+
+    rotate: {
+      '45': '45deg',
+      '-45': '-45deg',
+    }
   },
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-transforms')({
+      //
+    })
+  ],
 }

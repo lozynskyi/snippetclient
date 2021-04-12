@@ -1,69 +1,105 @@
 <template>
-  <div class="bg-white flex items-center">
+  <div class="bg-white py-8 lg:py-0 flex items-center">
     <div class="container  flex flex-wrap items-center lg:flex-nowrap">
       <nuxt-link
-        :to="{ name: 'home' }"
+        :to="{ name: 'index' }"
         class="mr-10 flex-shrink-0"
       >
         <img src="~/assets/logo.png" alt="Logo" class="h-8">
       </nuxt-link>
-      <div class="w-full flex">
-        <ul class="h-24 flex items-center">
+
+      <a
+        href="#"
+        class="lg:hidden ml-auto flex flex-col relative justify-center w-8 h-8"
+        @click.prevent="mobileNavOpen = !mobileNavOpen"
+      >
+        <span
+          class="bg-blue-500 h-1 w-8 rounded mb-1"
+          :class="{
+            'rotate-45 absolute right-0': mobileNavOpen
+          }"
+        >
+        </span>
+        <span
+          class="bg-blue-500 h-1 w-8 rounded mb-1"
+          :class="{
+            '-rotate-45 absolute right-0': mobileNavOpen
+          }"
+        >
+        </span>
+        <span
+          class="bg-blue-500 h-1 w-8 rounded mb-1"
+          :class="{
+            'hidden': mobileNavOpen
+          }"
+        >
+        </span>
+
+      </a>
+
+      <div
+        class="w-full flex"
+        :class="{
+          'mt-8': mobileNavOpen,
+          'hidden lg:flex': !mobileNavOpen
+        }"
+      >
+        <ul class="lg:h-24 lg:flex items-center w-full lg:w-auto">
           <li>
             <nuxt-link
-              :to="{ name: 'home' }"
-              class="text-lg text-gray-700 py-8 px-4"
+              :to="{ name: 'index' }"
+              class="text-lg text-gray-700 lg:py-8 lg:px-4"
             >
               Browse
             </nuxt-link>
           </li>
           <li>
             <nuxt-link
-              :to="{ name: 'home' }"
-              class="text-lg text-gray-700 py-8 px-4"
+              :to="{ name: 'index' }"
+              class="text-lg text-gray-700 lg:py-8 lg:px-4"
             >
               Search
             </nuxt-link>
           </li>
         </ul>
 
-        <ul class="h-24 flex items-center ml-auto text-right">
+        <ul class="lg:h-24 lg:flex items-center ml-auto text-right w-full lg:w-auto">
           <li>
             <nuxt-link
-              :to="{ name: 'home' }"
-              class="text-lg text-gray-700 py-8 px-4"
+              :to="{ name: 'index' }"
+              class="text-lg text-gray-700 lg:py-8 lg:px-4"
             >
               Dashboard
             </nuxt-link>
           </li>
           <li>
             <nuxt-link
-              :to="{ name: 'home' }"
-              class="text-lg text-gray-700 py-8 px-4"
+              :to="{ name: 'index' }"
+              class="text-lg text-gray-700 lg:py-8 lg:px-4"
             >
               Pavlo Lozynskyi
             </nuxt-link>
           </li>
           <li>
             <nuxt-link
-              :to="{ name: 'home' }"
-              class="text-lg text-gray-700 py-8 px-4"
+              :to="{ name: 'index' }"
+              class="text-lg text-gray-700 lg:py-8 lg:px-4"
             >
               Sign In
             </nuxt-link>
           </li>
           <li>
             <nuxt-link
-              :to="{ name: 'home' }"
-              class="text-lg text-gray-700 py-8 px-4"
+              :to="{ name: 'index' }"
+              class="text-lg text-gray-700 lg:py-8 lg:px-4"
             >
               Create account
             </nuxt-link>
           </li>
           <li>
             <nuxt-link
-              :to="{ name: 'home' }"
-              class="text-lg text-gray-700 py-8 px-4"
+              :to="{ name: 'index' }"
+              class="text-lg text-gray-700 lg:py-8 lg:px-4"
             >
               Sign Out
             </nuxt-link>
@@ -75,6 +111,11 @@
 </template>
 <script>
   export default {
+    data () {
+      return {
+        mobileNavOpen: false
+      }
+    }
 
   }
 </script>
