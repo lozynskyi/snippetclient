@@ -1,6 +1,7 @@
 <template>
-  <div class="container bg-blue-500">
-    Home
+  <div class="container">
+    <h1 class="font-medium text-4xl">Snippets</h1>
+    <p>A little more paragraph text</p>
   </div>
 </template>
 
