@@ -45,7 +45,38 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {
-    baseURL: env.parsed.PI_URL
+    baseURL: env.parsed.API
+  },
+  auth: {
+    strategies: {
+      local: {
+        token: {
+          property: 'data.token',
+          // required: true,
+          // type: 'Bearer'
+        },
+        user: {
+          property: 'data',
+          // autoFetch: true
+        },
+        endpoints: {
+          login: { url: 'auth/signin', method: 'post' },
+          user: { url: 'auth/user', method: 'get' }
+        }
+        // endpoints: {
+        //   login: {
+        //     url: 'auth/signin',
+        //     method: 'post',
+        //     property: 'data.token'
+        //   },
+        //   user: {
+        //     url: 'auth/me',
+        //     method: 'get',
+        //     property: 'data'
+        //   }
+        // }
+      }
+    }
   },
 
   tailwindcss: {
