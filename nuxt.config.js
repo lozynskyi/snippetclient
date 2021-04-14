@@ -1,7 +1,5 @@
 let env=require('dotenv').config()
 
-console.log(env.parsed)
-
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
@@ -42,10 +40,13 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    '@nuxtjs/auth-next',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: env.parsed.PI_URL
+  },
 
   tailwindcss: {
     cssPath: '~/assets/css/tailwind.css',
