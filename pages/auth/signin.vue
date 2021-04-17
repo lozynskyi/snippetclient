@@ -23,11 +23,19 @@
             class="border-2 border-gray-400 rounded block w-full p-3"
           >
         </div>
+
+        <div>
+          <button type="submit" class="bg-blue-500 text-white p-4 rounded text-center font-medium block w-full">
+            Sign In
+          </button>
+        </div>
+
+        <div class="">
+          No account?
+        </div>
       </form>
 
     </div>
-
-    <a href="" @click.prevent="submit">sign in</a>
   </div>
 </template>
 
