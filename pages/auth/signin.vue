@@ -3,7 +3,11 @@
     <div class="flex flex-col items-center">
       <h1 class="text-3xl text-gray-700 font-medium mb-10"> Hello. </h1>
 
-      <form action="#" class="bg-white p-8 rounded w-full md:w-6/12 lg:w-4/12 mb-6" onclick.prevent="">
+      <form
+        action="#"
+        class="bg-white p-8 rounded w-full md:w-6/12 lg:w-4/12 mb-6"
+        @submit.prevent="submit"
+      >
         <div class="mb-6">
           <label for="email" class="block text-gray-600 font-medium mb-2">Email address</label>
           <input
@@ -11,6 +15,7 @@
             name="email"
             id="email"
             class="border-2 border-gray-400 rounded block w-full p-3"
+            v-model="form.email"
           >
 <!--          <div class="text-red-500 mb-4 text-sm mt-1">-->
 <!--            Message-->
@@ -24,6 +29,7 @@
             name="password"
             id="password"
             class="border-2 border-gray-400 rounded block w-full p-3"
+            v-model="form.password"
           >
         </div>
 
@@ -51,13 +57,18 @@
   import Index from "@/pages";
   export default {
     components: {Index},
+    data() {
+      return {
+        form: {
+          email: '',
+          password: ''
+        }
+      }
+    },
     methods: {
       async submit() {
         await this.$auth.loginWith('local', {
-          data: {
-            email: 'valera.popkin@gmx.com',
-            password: 'password'
-          }
+          data: this.form
         })
 
       }
