@@ -12,6 +12,9 @@
             id="email"
             class="border-2 border-gray-400 rounded block w-full p-3"
           >
+<!--          <div class="text-red-500 mb-4 text-sm mt-1">-->
+<!--            Message-->
+<!--          </div>-->
         </div>
 
         <div class="mb-6">
@@ -30,10 +33,15 @@
           </button>
         </div>
 
-        <div class="">
-          No account?
-        </div>
       </form>
+      <div class="text-center text-gray-600">
+        No account?
+        <nuxt-link
+          :to="{ name: 'index' }"
+        >
+          Create one here
+        </nuxt-link>
+      </div>
 
     </div>
   </div>
