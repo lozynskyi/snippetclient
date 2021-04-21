@@ -6,7 +6,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'snippetclient',
+    titleTemplate: '%s - BoringBox',
     htmlAttrs: {
       lang: 'en'
     },

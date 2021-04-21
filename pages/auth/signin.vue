@@ -91,6 +91,11 @@
         validation: {}
       }
     },
+    head () {
+      return {
+        title: 'Sign In'
+      }
+    },
     methods: {
       async submit() {
         try {
