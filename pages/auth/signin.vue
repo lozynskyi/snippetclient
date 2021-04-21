@@ -28,7 +28,7 @@
             }"
             v-model="form.email"
           >
-          <div class="text-red-500 mb-4 text-sm mt-1" v-if="validation.email">
+          <div class="text-red-500 mb-4 font-medium text-sm mt-1" v-if="validation.email">
             {{ validation.email[0] }}
           </div>
         </div>
@@ -53,7 +53,7 @@
             }"
             v-model="form.password"
           >
-          <div class="text-red-500 mb-4 text-sm mt-1" v-if="validation.password">
+          <div class="text-red-500 mb-4 font-medium text-sm mt-1" v-if="validation.password">
             {{ validation.password[0] }}
           </div>
         </div>
