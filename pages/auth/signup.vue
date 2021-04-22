@@ -93,7 +93,7 @@
     },
     head () {
       return {
-        title: 'Sign In'
+        title: 'Sign Up'
       }
     },
     methods: {
