@@ -18,3 +18,4 @@ $ npm run generate
 ```
 **TODO:**
 1. Add socket.io integration.
+2. Add registration.
