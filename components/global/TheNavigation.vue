@@ -5,7 +5,7 @@
         :to="{ name: 'index' }"
         class="mr-10 flex-shrink-0"
       >
-        <img src="~/assets/logo.png" alt="Logo" class="h-8">
+        <img src="~/assets/logo.svg" alt="Logo" class="h-10">
       </nuxt-link>
 
       <a
