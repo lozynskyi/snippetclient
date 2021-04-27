@@ -15,7 +15,7 @@
         </li>
       </ul>
 
-      <ul class="flex flex-wrap lg:flex-nowrap items-center">
+      <ul class="flex flex-wrap lg:flex-nowrap items-end">
         <li class="mr-8 w-full lg:w-auto">
           <a
             class="text-gray-500 text-sm"
