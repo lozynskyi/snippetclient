@@ -16,7 +16,7 @@
       </ul>
 
       <ul class="flex flex-wrap lg:flex-nowrap items-center">
-        <li class="mr-8">
+        <li class="mr-8 w-full lg:w-auto">
           <a
             class="text-gray-500 text-sm"
             href="https://github.com"
@@ -26,7 +26,7 @@
             github.com
           </a>
         </li>
-        <li class="mr-8">
+        <li class="mr-8 w-full lg:w-auto">
           <a
             class="text-gray-500 text-sm"
             href="#"
@@ -36,7 +36,7 @@
             Terms
           </a>
         </li>
-        <li class="mr-8">
+        <li class="mr-8 w-full lg:w-auto">
           <a
             class="text-gray-500 text-sm"
             href="#"
@@ -46,7 +46,7 @@
             Privacy policy
           </a>
         </li>
-        <li class="mr-8">
+        <li class="mr-8 w-full lg:w-auto">
           <a
             class="text-gray-500 text-sm"
             href="mailto:conact@boringbox.app"
