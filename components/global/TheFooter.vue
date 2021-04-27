@@ -4,10 +4,10 @@
       <ul class="flex items-center mb-6 lg:mb-0">
         <li class="mr-16">
           <nuxt-link
-            class=""
+            class="text-gray-500 text-sm"
             :to="{name: 'index'}"
           >
-
+          Hjome
           </nuxt-link>
 
         </li>
