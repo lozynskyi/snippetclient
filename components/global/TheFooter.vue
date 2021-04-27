@@ -10,7 +10,7 @@
             <img src="~/assets/logo.svg" alt="Logo" class="h-6">
           </nuxt-link>
           <div class="text-gray-500 text-sm">
-            &nbsp;&nbsp;&copy; BoringBox Ltd 2021. All rights reserved.
+            &copy; BoringBox Ltd 2021. All rights reserved.
           </div>
         </li>
       </ul>
