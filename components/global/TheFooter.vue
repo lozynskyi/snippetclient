@@ -15,7 +15,7 @@
         </li>
       </ul>
 
-      <ul class="flex items-center">
+      <ul class="flex flex-wrap lg:flex-nowrap items-center">
         <li class="mr-8">
           <a
             class="text-gray-500 text-sm"
@@ -24,6 +24,34 @@
             rel="noopener"
           >
             github.com
+          </a>
+        </li>
+        <li class="mr-8">
+          <a
+            class="text-gray-500 text-sm"
+            href="#"
+            target="_blank"
+            rel="noopener"
+          >
+            Terms
+          </a>
+        </li>
+        <li class="mr-8">
+          <a
+            class="text-gray-500 text-sm"
+            href="#"
+            target="_blank"
+            rel="noopener"
+          >
+            Privacy policy
+          </a>
+        </li>
+        <li class="mr-8">
+          <a
+            class="text-gray-500 text-sm"
+            href="mailto:conact@boringbox.app"
+          >
+            conact@boringbox.app
           </a>
         </li>
       </ul>
