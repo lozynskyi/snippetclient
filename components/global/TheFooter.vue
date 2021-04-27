@@ -4,11 +4,14 @@
       <ul class="flex items-center mb-6 lg:mb-0">
         <li class="mr-16">
           <nuxt-link
-            class="text-gray-500 text-sm"
+            class="text-gray-500 text-sm mb-2 inline-block"
             :to="{name: 'index'}"
           >
-          Hjome
+          Home
           </nuxt-link>
+          <div>
+            &copy; BoringBox Ltd 2021. All rights reserved.
+          </div>
 
         </li>
       </ul>
