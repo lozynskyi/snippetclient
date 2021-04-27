@@ -4,13 +4,13 @@
       <ul class="flex items-center mb-6 lg:mb-0">
         <li class="mr-16">
           <nuxt-link
-            class="text-gray-500 text-sm mb-2 inline-block"
+            class="text-gray-500 text-sm mb-2 inline-block items-center"
             :to="{name: 'index'}"
           >
-          Home
+            <img src="~/assets/logo.svg" alt="Logo" class="h-6">
           </nuxt-link>
           <div class="text-gray-500 text-sm">
-            &copy; BoringBox Ltd 2021. All rights reserved.
+            &nbsp;&nbsp;&copy; BoringBox Ltd 2021. All rights reserved.
           </div>
         </li>
       </ul>
