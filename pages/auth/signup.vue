@@ -66,9 +66,9 @@
 
       </form>
       <div class="text-center text-gray-600">
-        No account?
+        Already have an account? Log in
         <nuxt-link
-          :to="{ name: 'index' }"
+          :to="{ name: 'signin' }"
         >
           Create one here
         </nuxt-link>
