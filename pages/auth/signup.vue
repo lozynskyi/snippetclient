@@ -1,7 +1,7 @@
 <template>
   <div class="container mt-16">
     <div class="flex flex-col items-center">
-      <h1 class="text-3xl text-gray-700 font-medium mb-10"> Hello. </h1>
+      <h1 class="text-3xl text-gray-700 font-medium mb-10"> Welcome you here. </h1>
 
       <form
         action="#"
@@ -66,11 +66,11 @@
 
       </form>
       <div class="text-center text-gray-600">
-        Already have an account? Log in
+        Already have an account?
         <nuxt-link
-          :to="{ name: 'signin' }"
+          :to="{ name: 'auth-signin' }"
         >
-          Create one here
+          Log in
         </nuxt-link>
       </div>
 

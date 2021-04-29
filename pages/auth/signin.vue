@@ -1,7 +1,7 @@
 <template>
   <div class="container mt-16">
     <div class="flex flex-col items-center">
-      <h1 class="text-3xl text-gray-700 font-medium mb-10"> Hello. </h1>
+      <h1 class="text-3xl text-gray-700 font-medium mb-10"> Well hello again. </h1>
 
       <form
         action="#"
