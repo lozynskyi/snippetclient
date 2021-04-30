@@ -50,6 +50,9 @@ export default {
     baseURL: env.parsed.API
   },
   auth: {
+    redirect: {
+      login: 'auth/signin'
+    },
     strategies: {
       local: {
         token: {
