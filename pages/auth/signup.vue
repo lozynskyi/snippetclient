@@ -85,7 +85,7 @@
 
         <div>
           <button type="submit" class="bg-blue-500 text-white p-4 rounded text-center font-medium block w-full">
-            Sign In
+            Sign Up
           </button>
         </div>
 
