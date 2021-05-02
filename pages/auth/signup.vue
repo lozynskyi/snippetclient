@@ -58,6 +58,31 @@
           </div>
         </div>
 
+        <div class="mb-6">
+          <label
+            for="password"
+            class="block text-gray-600 font-medium mb-2"
+            :class="{
+              'text-red-500': validation.password
+            }"
+          >
+            Confirm password
+          </label>
+          <input
+            type="password"
+            name="password_confirm"
+            id="password_confirm"
+            class="border-2 border-gray-400 rounded block w-full p-3"
+            :class="{
+              'border-red-500': validation.password_confirm
+            }"
+            v-model="form.password_confirm"
+          >
+          <div class="text-red-500 mb-4 font-medium text-sm mt-1" v-if="validation.password_confirm">
+            {{ validation.password_confirm[0] }}
+          </div>
+        </div>
+
         <div>
           <button type="submit" class="bg-blue-500 text-white p-4 rounded text-center font-medium block w-full">
             Sign In
