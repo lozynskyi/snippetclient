@@ -34,7 +34,12 @@
         </div>
 
         <div class="flex flex-wrap lg:flex-nowrap">
-
+          <div class="lg:mr-6 w-full lg:w-6/12 mb-6">
+            left
+          </div>
+          <div class="w-full lg:w-6/12 mb-6">
+            right
+          </div>
         </div>
 
         <div class="mb-6">
