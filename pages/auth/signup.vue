@@ -35,7 +35,30 @@
 
         <div class="flex flex-wrap lg:flex-nowrap">
           <div class="lg:mr-6 w-full lg:w-6/12 mb-6">
-            left
+
+            <label
+              for="name"
+              class="block text-gray-600 font-medium mb-2"
+              :class="{
+              'text-red-500': validation.name
+            }"
+            >
+              Name
+            </label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              class="border-2 border-gray-400 rounded block w-full p-3"
+              :class="{
+              'border-red-500': validation.name
+            }"
+              v-model="form.name"
+            >
+            <div class="text-red-500 mb-4 font-medium text-sm mt-1" v-if="validation.name">
+              {{ validation.name[0] }}
+            </div>
+
           </div>
           <div class="w-full lg:w-6/12 mb-6">
             right
