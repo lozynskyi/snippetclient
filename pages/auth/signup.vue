@@ -5,7 +5,7 @@
 
       <form
         action="#"
-        class="bg-white p-8 rounded w-full md:w-6/12 lg:w-4/12 mb-6"
+        class="bg-white p-8 rounded w-full md:w-6/12 lg:w-7/12 mb-6"
         @submit.prevent="submit"
       >
         <div class="mb-6">
@@ -31,6 +31,10 @@
           <div class="text-red-500 mb-4 font-medium text-sm mt-1" v-if="validation.email">
             {{ validation.email[0] }}
           </div>
+        </div>
+
+        <div class="flex flex-wrap lg:flex-nowrap">
+
         </div>
 
         <div class="mb-6">
