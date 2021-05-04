@@ -181,7 +181,7 @@
     methods: {
       async submit() {
         try {
-
+          await this.$axios.$post('auth/signup', this.form)
         } catch (e) {
           console.log(e)
           if (e.response.status === 422) {
