@@ -114,10 +114,10 @@
 
         <div class="mb-6">
           <label
-            for="password"
+            for="password_confirmation"
             class="block text-gray-600 font-medium mb-2"
             :class="{
-              'text-red-500': validation.password
+              'text-red-500': validation.password_confirmation
             }"
           >
             Confirm password
@@ -128,12 +128,12 @@
             id="password_confirm"
             class="border-2 border-gray-400 rounded block w-full p-3"
             :class="{
-              'border-red-500': validation.password_confirm
+              'border-red-500': validation.password_confirmation
             }"
-            v-model="form.password_confirm"
+            v-model="form.password_confirmation"
           >
-          <div class="text-red-500 mb-4 font-medium text-sm mt-1" v-if="validation.password_confirm">
-            {{ validation.password_confirm[0] }}
+          <div class="text-red-500 mb-4 font-medium text-sm mt-1" v-if="validation.password_confirmation">
+            {{ validation.password_confirmation[0] }}
           </div>
         </div>
 
@@ -181,9 +181,7 @@
     methods: {
       async submit() {
         try {
-          await this.$auth.loginWith('local', {
-            data: this.form
-          })
+
         } catch (e) {
           console.log(e)
           if (e.response.status === 422) {
