@@ -87,53 +87,55 @@
           </div>
         </div>
 
-        <div class="mb-6">
-          <label
-            for="password"
-            class="block text-gray-600 font-medium mb-2"
-            :class="{
-              'text-red-500': validation.password
-            }"
-          >
-            Password
-          </label>
-          <input
-            type="password"
-            name="password"
-            id="password"
-            class="border-2 border-gray-400 rounded block w-full p-3"
-            :class="{
-              'border-red-500': validation.password
-            }"
-            v-model="form.password"
-          >
-          <div class="text-red-500 mb-4 font-medium text-sm mt-1" v-if="validation.password">
-            {{ validation.password[0] }}
+        <div class="flex flex-wrap lg:flex-nowrap">
+          <div class="lg:mr-6 w-full lg:w-6/12 mb-6">
+            <label
+              for="password"
+              class="block text-gray-600 font-medium mb-2"
+              :class="{
+                'text-red-500': validation.password
+              }"
+            >
+              Password
+            </label>
+            <input
+              type="password"
+              name="password"
+              id="password"
+              class="border-2 border-gray-400 rounded block w-full p-3"
+              :class="{
+                'border-red-500': validation.password
+              }"
+              v-model="form.password"
+            >
+            <div class="text-red-500 mb-4 font-medium text-sm mt-1" v-if="validation.password">
+              {{ validation.password[0] }}
+            </div>
           </div>
-        </div>
 
-        <div class="mb-6">
-          <label
-            for="password_confirmation"
-            class="block text-gray-600 font-medium mb-2"
-            :class="{
-              'text-red-500': validation.password_confirmation
-            }"
-          >
-            Confirm password
-          </label>
-          <input
-            type="password"
-            name="password_confirm"
-            id="password_confirm"
-            class="border-2 border-gray-400 rounded block w-full p-3"
-            :class="{
-              'border-red-500': validation.password_confirmation
-            }"
-            v-model="form.password_confirmation"
-          >
-          <div class="text-red-500 mb-4 font-medium text-sm mt-1" v-if="validation.password_confirmation">
-            {{ validation.password_confirmation[0] }}
+          <div class="w-full lg:w-6/12 mb-6">
+            <label
+              for="password_confirmation"
+              class="block text-gray-600 font-medium mb-2"
+              :class="{
+                'text-red-500': validation.password_confirmation
+              }"
+            >
+              Confirm password
+            </label>
+            <input
+              type="password"
+              name="password_confirm"
+              id="password_confirm"
+              class="border-2 border-gray-400 rounded block w-full p-3"
+              :class="{
+                'border-red-500': validation.password_confirmation
+              }"
+              v-model="form.password_confirmation"
+            >
+            <div class="text-red-500 mb-4 font-medium text-sm mt-1" v-if="validation.password_confirmation">
+              {{ validation.password_confirmation[0] }}
+            </div>
           </div>
         </div>
 
