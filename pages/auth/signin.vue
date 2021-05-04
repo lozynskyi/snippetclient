@@ -107,6 +107,9 @@
           if (e.response.status === 422) {
             this.validation = e.response.data.errors
           }
+          if (e.response.status === 401) {
+            this.validation = e.response.data.errors
+          }
         }
       }
     }
