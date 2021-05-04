@@ -182,6 +182,12 @@
       async submit() {
         try {
           await this.$axios.$post('auth/signup', this.form)
+          await this.$auth.loginWith('local', {
+            data: {
+              email: this.form.email,
+              password: this.form.password,
+            }
+          })
         } catch (e) {
           console.log(e)
           if (e.response.status === 422) {
