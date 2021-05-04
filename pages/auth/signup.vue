@@ -165,7 +165,10 @@
       return {
         form: {
           email: '',
-          password: ''
+          password: '',
+          password_confirmation: '',
+          name: '',
+          username: ''
         },
         validation: {}
       }
