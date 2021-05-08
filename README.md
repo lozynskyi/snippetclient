@@ -25,4 +25,4 @@ $ npm run generate
 3. Add Deploy to CDN service.
 4. Add Deploy to objectStorage.
 5. Add Deploy to git actions.
-6. Add tokenRefresh endpoint actin.
+6. Add tokenRefresh endpoint action.
