@@ -20,3 +20,4 @@ $ npm run generate
 1. Add socket.io integration.
 2. Add registration.
 3. Add Deploy to CDN service.
+4. Add Deploy to objectStorage.
