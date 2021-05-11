@@ -69,7 +69,7 @@ export default {
         },
         user: {
           property: 'data',
-          // autoFetch: true
+          autoFetch: true
         },
         endpoints: {
           login: { url: 'auth/signin', method: 'post' },
@@ -77,18 +77,6 @@ export default {
           refresh: { url: 'auth/refresh', method: 'post' },
           user: { url: 'auth/me', method: 'get' }
         }
-        // endpoints: {
-        //   login: {
-        //     url: 'auth/signin',
-        //     method: 'post',
-        //     property: 'data.token'
-        //   },
-        //   user: {
-        //     url: 'auth/me',
-        //     method: 'get',
-        //     property: 'data'
-        //   }
-        // }
       }
     }
   },
