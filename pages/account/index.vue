@@ -109,6 +109,11 @@
             <div class="text-red-500 mb-4 font-medium text-sm mt-1" v-if="validation.password">
               {{ validation.password[0] }}
             </div>
+
+            <div class="text-sm text-gray-500">
+              Leave blank to keep the same
+            </div>
+
           </div>
 
           <div>
@@ -160,6 +165,9 @@
     methods: {
       async submit() {
         try {
+          await this.$axios.$post(`user/${this.$auth.user.user.username}`, this.form)
+
+          await this.$auth.fetchUser()
 
         } catch (e) {
           console.log(e)
