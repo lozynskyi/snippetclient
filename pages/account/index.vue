@@ -87,29 +87,30 @@
 </template>
 
 <script>
-  import Index from "@/pages";
   export default {
-    components: {Index},
+    middleware: [
+      'auth'
+    ],
     data() {
       return {
         form: {
           email: '',
-          password: ''
+          password: '',
+          name: '',
+          username: ''
         },
         validation: {}
       }
     },
     head () {
       return {
-        title: 'Sign In'
+        title: 'Account'
       }
     },
     methods: {
       async submit() {
         try {
-          await this.$auth.loginWith('local', {
-            data: this.form
-          })
+
         } catch (e) {
           console.log(e)
           if (e.response.status === 422) {
