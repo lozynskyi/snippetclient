@@ -57,6 +57,13 @@ export default {
       local: {
         token: {
           property: 'data.token',
+          maxAge: 60 * 60,
+          // required: true,
+          // type: 'Bearer'
+        },
+        refreshToken: {
+          property: 'data.token',
+          maxAge: 60 * 60,
           // required: true,
           // type: 'Bearer'
         },
@@ -67,6 +74,7 @@ export default {
         endpoints: {
           login: { url: 'auth/signin', method: 'post' },
           logout: { url: 'auth/signout', method: 'post' },
+          refresh: { url: 'auth/refresh', method: 'post' },
           user: { url: 'auth/me', method: 'get' }
         }
         // endpoints: {
