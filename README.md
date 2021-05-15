@@ -27,3 +27,4 @@ $ npm run generate
 5. Add Deploy to git actions.
 6. Add tokenRefresh endpoint action.
 7. Use scheme for a refresh token use.
+8. Update todo list for dashboard.
