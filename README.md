@@ -26,5 +26,5 @@ $ npm run generate
 4. Add Deploy to objectStorage.
 5. Add Deploy to git actions.
 6. Add tokenRefresh endpoint action.
-7. Use scheme for a refresh token use.
+7. Use scheme for a refresh token use. (https://dev.auth.nuxtjs.org/schemes/refresh)
 8. Update todo list for dashboard.
