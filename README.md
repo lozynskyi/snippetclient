@@ -26,5 +26,9 @@ $ npm run generate
 4. Add Deploy to objectStorage.
 5. Add Deploy to git actions.
 6. Add tokenRefresh endpoint action.
-7. Use scheme for a refresh token use. (https://dev.auth.nuxtjs.org/schemes/refresh)
+7. Use scheme for a refresh token use. 
+   `(https://dev.auth.nuxtjs.org/schemes/refresh)`
+   `(https://stackoverflow.com/questions/63436923/nuxt-js-auth-jwt-refresh-token)`
+   `(https://dev.to/mrnaif2018/how-to-make-nuxt-auth-working-with-jwt-a-definitive-guide-9he)`
+   
 8. Update todo list for dashboard.
