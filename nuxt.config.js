@@ -55,6 +55,7 @@ export default {
     },
     strategies: {
       local: {
+        scheme: 'refresh',
         token: {
           property: 'data.token',
           maxAge: 60 * 60,
