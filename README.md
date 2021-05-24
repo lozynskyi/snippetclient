@@ -32,3 +32,4 @@ $ npm run generate
    `(https://dev.to/mrnaif2018/how-to-make-nuxt-auth-working-with-jwt-a-definitive-guide-9he)`
    
 8. Update todo list for dashboard.
+9. Add user role division.
